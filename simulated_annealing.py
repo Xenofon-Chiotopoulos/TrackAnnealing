@@ -8,6 +8,7 @@ def simulated_annealing(event, params, num_reads, annealing_type='BQM', plot=Fal
 
     start = time.time()
     A, b, components, segments = generate_hamiltonian(event, params)
+    #print(np.shape(A))
 
     end = time.time()
     ham_time = end - start
@@ -43,7 +44,8 @@ def simulated_annealing(event, params, num_reads, annealing_type='BQM', plot=Fal
     end = time.time()
     print(end - start,'s for simulated annealing')
     annealing_time = end - start
-
+    #print(best_sample)
+    #print(sol_sample)
     solution_segments = [seg for sol, seg in zip(sol_sample, segments) if sol == 1]
 
     # Check if there are any segments in the solution

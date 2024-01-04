@@ -154,8 +154,7 @@ cython_debug/
 
 #Data
 Data
-Data_1shot
-Data_QUBO
+trackhhl
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

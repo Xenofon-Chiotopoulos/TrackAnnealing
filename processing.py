@@ -6,7 +6,7 @@ def load_list_from_file(filename):
         loaded_data = pickle.load(file)
     return loaded_data
 
-data_path = 'Data_1shot'
+data_path = 'Data/Data_30_tracks'
 
 Ham_time = load_list_from_file(f'{data_path}/Ham_time.pkl')
 annealing_time = load_list_from_file(f'{data_path}/annealing_time.pkl')
@@ -18,9 +18,9 @@ solution_segments = load_list_from_file(f'{data_path}/solution_segments.pkl')
 
 array_ind = -1
 ''''''
-plot_event_tracks(event[array_ind])
-plot_event_segments(event[array_ind],segments[array_ind])
-plot_solution_segments(event[array_ind],solution_segments[array_ind])
+#plot_event_tracks(event[array_ind])
+#plot_event_segments(event[array_ind],segments[array_ind])
+#plot_solution_segments(event[array_ind],solution_segments[array_ind])
 plot_A(A[array_ind], components[array_ind])
 
 
